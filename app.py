@@ -1,5 +1,7 @@
 # app.py
-OPENWEATHER_API_KEY = "f110ec418a4d28a521b1b9d73c16bf4c"
+import os
+
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 def notify():
     print("Sending alert...")
